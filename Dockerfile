@@ -5,6 +5,7 @@ WORKDIR /code
 COPY ./requirement.txt /code/requirement.txt
 
 RUN pip install -r requirement.txt
+RUN apt-get update && apt-get install -y libpq-dev
 
 COPY ./app /code/app
 
