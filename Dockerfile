@@ -1,7 +1,7 @@
 
 FROM python:3.9-slim
 WORKDIR /app
-COPY requirements.txt .
+COPY requirement.txt .
 # Install the required Python packages
 RUN pip install --no-cache-dir -r requirement.txt
 # Copy the entire project folder into the container
