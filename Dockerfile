@@ -4,7 +4,7 @@ WORKDIR /code
 
 COPY ./requirement.txt /code/requirement.txt
 
-RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
+RUN pip install --no-cache-dir --upgrade -r /code/requirement.txt
 
 COPY ./app /code/app
 
